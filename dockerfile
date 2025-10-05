@@ -13,6 +13,12 @@ WORKDIR nginx
 WORKDIR html
 COPY ./SampleWebApp/ .
 
+#7. RUN
+RUN dotnet build DockerSampleApp.csproj
+
+#7. Publish for publising the website
+RUN dotnet publish  
+
 FROM base as Final
 
 #2. 2 COPY
