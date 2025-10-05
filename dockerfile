@@ -7,6 +7,7 @@ FROM nginx:mainline-bookworm-perl as base
 
 #4. ARG and ENV
 ARG build_configuration=Release
+EXPOSE 80
 WORKDIR /usr/share
 WORKDIR nginx
 WORKDIR html
