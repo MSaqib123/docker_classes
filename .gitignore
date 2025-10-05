@@ -1,0 +1,22 @@
+# Visual Studio files
+.vs/
+*.suo
+*.user
+
+# GitHub workflow files (optional, include if you don't want to track GitHub-specific configs)
+.github/
+
+# C# build outputs
+bin/
+obj/
+
+# Visual Studio Code
+.vscode/
+
+# NuGet packages
+packages/
+*.nupkg
+
+# Temporary files
+*.cache
+*.log
