@@ -1,3 +1,4 @@
+#1. FROM Command
 FROM nginx:mainline-bookworm-perl as base
 COPY ./SampleWebApp/ /usr/share/nginx/html
 
