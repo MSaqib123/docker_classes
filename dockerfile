@@ -4,12 +4,21 @@ FROM nginx:mainline-bookworm-perl as base
 #3. WORKDIR
 #WORKDIR /usr/share/nginx/html
 #WORKDIR src
+
+#4. ARG and ENV
+ARG build_configuration=Release
 WORKDIR /usr/share
 WORKDIR nginx
 WORKDIR html
 COPY ./SampleWebApp/ .
 
 FROM base as Final
+
 #2. 2 COPY
 COPY --from=base /usr/share/nginx/html /src/
+
+
+
+
+
 
